@@ -9,7 +9,7 @@ date: 2018-01-01
 permalink: /getaccess/index.html
 eleventyNavigation:
   key: Get Access
-  order: 5
+  order: 4
 ---
 The contact form on this page uses [Netlify Forms](https://www.netlify.com/docs/form-handling/) to process submissions,
 and saves them in the connected Netlify account where notifications can
