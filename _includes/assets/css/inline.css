@@ -28,14 +28,14 @@ body {
   background-color: var(--background);
   color: var(--primary);
   overflow-y: auto;
-  align-content: center;
-  align-items: center;
+  align-content: start;
+  align-items: start;
   justify-items: center;
   justify-content: center;
 }
 
 main {
-  margin: 0 auto;
+  margin: 5rem auto 0 auto;
   max-width: 37.5em;
 }
 
@@ -108,15 +108,11 @@ header .container {
   width: 90%;
   margin: 0 auto;
   border-radius: 50rem;
-  padding: 0.4rem 2rem;
+  padding: 0.5rem 2rem;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
-}
-
-header .logo {
-  padding: 0.4rem 0;
 }
 
 /* Header Nav */
