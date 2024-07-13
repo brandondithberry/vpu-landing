@@ -1,23 +1,24 @@
-<!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<!DOCTYPE html>
+<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
+  {% include "components/head.njk" %}
 
-	{% include "components/head.njk" %}
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="{{ '/' | url }}"
+            ><img src="/static/img/logo-black.png" alt="logo" width="140"
+          /></a>
+        </div>
+        <div class="menu">{% include "components/nav.njk" %}</div>
+        <div class="cta"><a href="/" class="btn">Get Access</a></div>
+      </div>
+    </header>
 
-	<body>
+    <main>
+      {{ layoutContent | safe }}
+    </main>
 
-		<header>
-			<em>
-				<a href="{{ '/' | url }}">{{ metadata.title }}</a>
-			</em>
-			{% include "components/nav.njk" %}
-		</header>
-
-		<main>
-			{{ layoutContent | safe }}
-		</main>
-
-		{% include "components/footer.njk" %}
-
-	</body>
-
+    {% include "components/footer.njk" %}
+  </body>
 </html>
