@@ -30,13 +30,15 @@ body {
   overflow-y: auto;
   align-content: start;
   align-items: start;
-  justify-items: center;
-  justify-content: center;
+  justify-items: start;
+  justify-content: start;
 }
 
 main {
-  margin: 5rem auto 0 auto;
+  margin: 7rem auto 0 auto;
   max-width: 37.5em;
+  padding-bottom: 2rem;
+  height: auto;
 }
 
 p,
@@ -60,10 +62,6 @@ header,
 main,
 footer {
   padding: 1em;
-}
-
-main {
-  padding-bottom: 2em;
 }
 
 main :first-child,
@@ -91,7 +89,7 @@ pre {
 header {
   position: absolute;
   display: flex;
-  top: 20px;
+  top: 10px;
   width: 100%;
   margin: 0 auto;
 }
@@ -108,7 +106,7 @@ header .container {
   width: 90%;
   margin: 0 auto;
   border-radius: 50rem;
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2rem;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
