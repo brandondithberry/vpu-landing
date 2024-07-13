@@ -7,13 +7,28 @@
       <div class="container">
         <div class="logo">
           <a href="{{ '/' | url }}"
-            ><img src="/static/img/logo-black.png" alt="logo" width="140"
+            ><img src="/static/img/logo-black.png" alt="logo" width="120"
           /></a>
         </div>
-        <div class="menu">{% include "components/nav.njk" %}</div>
-        <div class="cta"><a href="/" class="btn">Get Access</a></div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="/day1/index.html"><strong>Day 1:</strong> For Creative Pros</a></li>
+              <li><a href="/day2/index.html"><strong>Day 2:</strong> For Marketers</a></li>
+              <li><a href="/partners/index.html"><strong>Partners</strong></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="cta">
+          <a href="/getaccess/index.html"><button>Get Access</button></a>
+        </div>
       </div>
     </header>
+
+    <img class="top-blob" src="/static/img/blob1.svg" alt="Top Blob">
+    <img class="bottom-blob" src="/static/img/blob2.svg" alt="Bottom Blob">
+    <img class="crop-right" src="/static/img/crop-right.svg" alt="Crop Right">
+    <img class="crop-left" src="/static/img/crop-left.svg" alt="Crop Left">
 
     <main>
       {{ layoutContent | safe }}
