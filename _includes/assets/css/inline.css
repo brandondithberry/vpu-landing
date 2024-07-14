@@ -34,7 +34,7 @@ body {
   align-items: start;
   justify-items: start;
   justify-content: start;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.03rem;
 }
 
 main {
@@ -170,12 +170,11 @@ nav ul :first-child {
 
 nav li {
   display: inline-block;
-  margin: 0 0.4em;
+  margin: 0 0.2em;
 }
 
 nav li a {
-  padding: 0.25em 0.5em;
-  border-radius: 0.25em;
+  padding: 0.25em 0.4em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -195,9 +194,7 @@ nav li a[data-current="current item"] {
   place-content: center;
   place-items: center;
   bottom: 0;
-  background: white;
   width: 100%;
-  color: black;
   font-size: 0.9rem;
   text-align: center;
   font-weight: bold;
@@ -227,8 +224,8 @@ nav li a[data-current="current item"] {
 
 .top-blob {
   position: absolute;
-  top: -5%;
-  right: -5%;
+  top: -6%;
+  right: -6%;
   z-index: 0;
   width: 40%;
   max-width: 15rem;
@@ -249,7 +246,7 @@ nav li a[data-current="current item"] {
   bottom: 1%;
   right: 1%;
   z-index: 0;
-  width: 15%;
+  width: 10%;
   max-width: 60px;
 }
 
@@ -258,7 +255,7 @@ nav li a[data-current="current item"] {
   top: 1%;
   left: 1%;
   z-index: 0;
-  width: 15%;
+  width: 10%;
   max-width: 60px;
 }
 
