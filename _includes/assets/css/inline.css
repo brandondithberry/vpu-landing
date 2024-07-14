@@ -2,6 +2,7 @@
   --primary: white;
   --secondary: rgb(228, 179, 19);
   --background: black;
+  font-size: 16px;
 }
 
 *,
@@ -75,15 +76,15 @@ h4:last-child {
 }
 
 .xxl-text {
-  font-size: 3rem;
-}
-
-.xl-text {
   font-size: 2rem;
 }
 
+.xl-text {
+  font-size: 1.4rem;
+}
+
 .lg-text {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 header,
@@ -117,15 +118,16 @@ pre {
 header {
   position: sticky;
   display: flex;
+  font-size: 0.9rem;
   top: 10px;
   width: 100%;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto;
   z-index: 100;
 }
 
 header .container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: #fff 0.2px 0.2px 10px;
   -ms-backdrop-filter: none;
@@ -135,46 +137,101 @@ header .container {
   width: 90%;
   margin: 0 auto;
   border-radius: 50rem;
-  padding: 0.7rem 2rem;
+  padding: 1rem 2rem;
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
 }
 
+header .logo {
+  width: 40vw;
+  max-width: 180px;
+}
+
+header .menu {
+  display: none;
+  font-weight: bold;
+}
+
+header .cta {
+  margin-top: 0.5rem;
+  display: none;
+}
+
 /* Header Nav */
-header nav ul {
+nav ul {
   padding: 0;
   list-style: none;
 }
 
-header nav ul :first-child {
+nav ul :first-child {
   margin-left: 0;
 }
 
-header nav li {
+nav li {
   display: inline-block;
   margin: 0 0.4em;
 }
 
-header nav li a {
+nav li a {
   padding: 0.25em 0.5em;
   border-radius: 0.25em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-header nav li a[href]:not(:hover) {
+nav li a[href]:not(:hover) {
   text-decoration: none;
 }
 
-header nav li a[data-current="current item"] {
+nav li a[data-current="current item"] {
   background-color: white;
+}
+
+.bottom-menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  color: black;
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.bottom-menu .cta {
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 1rem;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid black;
+}
+
+.bottom-menu .cta:hover {
+  background: white;
+  color: black;
+}
+
+.bottom-menu .menu {
+  background: white;
+  color: black;
+  width: 100%;
+  padding: 0.5rem;
 }
 
 .top-blob {
   position: absolute;
-  top: -10%;
+  top: -5%;
   right: -5%;
   z-index: 0;
-  width: 20%;
+  width: 40%;
+  max-width: 15rem;
 }
 
 .bottom-blob {
@@ -182,7 +239,9 @@ header nav li a[data-current="current item"] {
   bottom: 0%;
   left: 0%;
   z-index: 0;
-  width: 20%;
+  width: 40%;
+  max-width: 15rem;
+  display: none;
 }
 
 .crop-right {
@@ -190,7 +249,8 @@ header nav li a[data-current="current item"] {
   bottom: 1%;
   right: 1%;
   z-index: 0;
-  width: 77px;
+  width: 15%;
+  max-width: 60px;
 }
 
 .crop-left {
@@ -198,40 +258,32 @@ header nav li a[data-current="current item"] {
   top: 1%;
   left: 1%;
   z-index: 0;
-  width: 77px;
+  width: 15%;
+  max-width: 60px;
 }
 
 section {
   display: flex;
   flex-direction: column;
-  padding: 3% 1%;
+  padding: 10px;
   place-content: center;
   place-items: center;
+  overflow-x: hidden;
 }
 
 section .container {
-  max-width: 45%;
+  width: 100%;
 }
 
 .homepage .logo {
-  max-width: 28rem;
-}
-
-.homepage .btns {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.homepage .btns button {
-  background: none;
+  width: 200px;
+  display: none;
 }
 
 .days .container {
   display: flex;
-  flex-direction: row;
-  gap: 3rem;
+  flex-direction: column;
+  gap: 2rem;
   text-transform: uppercase;
 }
 
@@ -242,8 +294,9 @@ section .container {
   box-shadow: #fff 0px 1px 1rem;
   background: rgba(255, 255, 255, 0);
   color: white;
-  width: 50%;
+  width: 100%;
   transition: all 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .days .container a:hover {
@@ -337,12 +390,20 @@ button:hover {
   border: 1px solid black;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 11s00px) {
   :root {
     font-size: 1.1rem;
   }
 
   header .container {
     flex-direction: row;
+  }
+
+  header .logo {
+    display: block;
+  }
+
+  header .menu {
+    display: block;
   }
 }

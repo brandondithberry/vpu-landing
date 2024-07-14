@@ -7,16 +7,24 @@
       <div class="container">
         <div class="logo">
           <a href="{{ '/' | url }}"
-            ><img src="/static/img/logo-black.png" alt="logo" width="200"
+            ><img src="/static/img/logo-black.png" alt="logo"
           /></a>
         </div>
         <div class="menu">
           <nav>
             <ul>
-              <li><a href="/day1/index.html"><strong>Day 1:</strong> For Creatives</a></li>
-              <li><a href="/day2/index.html"><strong>Day 2:</strong> For Marketers</a></li>
-              <li><a href="/speakers/index.html"><strong>Speakers</strong></a></li>
-              <li><a href="/partners/index.html"><strong>Partners</strong></a></li>
+              <li>
+                <a href="/day1/index.html">Day One</a>
+              </li>
+              <li>
+                <a href="/day2/index.html">Day Two</a>
+              </li>
+              <li>
+                <a href="/speakers/index.html">Speakers</a>
+              </li>
+              <li>
+                <a href="/partners/index.html">Partners</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -26,14 +34,38 @@
       </div>
     </header>
 
-    <img class="top-blob" src="/static/img/blob1.svg" alt="Top Blob">
-    <img class="bottom-blob" src="/static/img/blob2.svg" alt="Bottom Blob">
-    <img class="crop-right" src="/static/img/crop-right.svg" alt="Crop Right">
-    <img class="crop-left" src="/static/img/crop-left.svg" alt="Crop Left">
+    <img class="top-blob" src="/static/img/blob1.svg" alt="Top Blob" />
+    <img class="bottom-blob" src="/static/img/blob2.svg" alt="Bottom Blob" />
+    <img class="crop-right" src="/static/img/crop-right.svg" alt="Crop Right" />
+    <img class="crop-left" src="/static/img/crop-left.svg" alt="Crop Left" />
 
     <main>
       {{ layoutContent | safe }}
     </main>
+
+    <div class="bottom-menu">
+      <div class="cta">
+        <a href="/">Request Access</a>
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li>
+              <a href="/day1/index.html">Day One</a>
+            </li>
+            <li>
+              <a href="/day2/index.html">Day Two</a>
+            </li>
+            <li>
+              <a href="/speakers/index.html">Speakers</a>
+            </li>
+            <li>
+              <a href="/partners/index.html">Partners</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
     {% include "components/footer.njk" %}
   </body>
