@@ -20,6 +20,7 @@ body {
   margin: 0;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
@@ -116,8 +117,7 @@ pre {
 header {
   position: fixed;
   display: flex;
-  font-size: 0.9rem;
-  top: 10px;
+  top: 5px;
   width: 100%;
   margin: 0 auto;
   z-index: 100;
@@ -168,11 +168,11 @@ nav ul :first-child {
 
 nav li {
   display: inline-block;
-  margin: 0 0.1em;
+  margin: 0 0.05em;
 }
 
 nav li a {
-  padding: 0.25em 0.3em;
+  padding: 0.25em 0.2em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -193,7 +193,6 @@ nav li a[data-current="current item"] {
   place-items: center;
   bottom: 1rem;
   width: 100%;
-  font-size: 0.9rem;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
