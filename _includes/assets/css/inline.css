@@ -2,7 +2,6 @@
   --primary: white;
   --secondary: rgb(228, 179, 19);
   --background: black;
-  font-size: 16px;
 }
 
 *,
@@ -34,7 +33,7 @@ body {
   align-items: start;
   justify-items: start;
   justify-content: start;
-  letter-spacing: 0.03rem;
+  letter-spacing: 0.02rem;
 }
 
 main {
@@ -170,11 +169,11 @@ nav ul :first-child {
 
 nav li {
   display: inline-block;
-  margin: 0 0.2em;
+  margin: 0 0.1em;
 }
 
 nav li a {
-  padding: 0.25em 0.4em;
+  padding: 0.25em 0.3em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -188,7 +187,7 @@ nav li a[data-current="current item"] {
 }
 
 .bottom-menu {
-  position: absolute;
+  position: sticky;
   display: flex;
   flex-direction: column;
   place-content: center;
