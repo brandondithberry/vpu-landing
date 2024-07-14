@@ -114,7 +114,7 @@ pre {
 }
 
 header {
-  position: absolute;
+  position: fixed;
   display: flex;
   font-size: 0.9rem;
   top: 10px;
@@ -186,7 +186,7 @@ nav li a[data-current="current item"] {
 }
 
 .bottom-menu {
-  position: absolute;
+  position: fixed;
   display: flex;
   flex-direction: column;
   place-content: center;
