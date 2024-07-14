@@ -38,7 +38,7 @@ body {
 
 main {
   position: relative;
-  margin: 0 auto 0 auto;
+  margin: 5rem auto;
   padding-bottom: 2rem;
   height: auto;
 }
@@ -115,7 +115,7 @@ pre {
 }
 
 header {
-  position: sticky;
+  position: absolute;
   display: flex;
   font-size: 0.9rem;
   top: 10px;
@@ -187,7 +187,7 @@ nav li a[data-current="current item"] {
 }
 
 .bottom-menu {
-  position: sticky;
+  position: absolute;
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -198,6 +198,7 @@ nav li a[data-current="current item"] {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
+  z-index: 100;
 }
 
 .bottom-menu .cta {
