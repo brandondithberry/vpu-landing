@@ -76,11 +76,11 @@ h4:last-child {
 }
 
 .xxl-text {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .xl-text {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 .lg-text {
@@ -265,7 +265,7 @@ nav li a[data-current="current item"] {
 section {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 10px 7rem 10px;
   place-content: center;
   place-items: center;
   overflow-x: hidden;
