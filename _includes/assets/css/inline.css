@@ -12,9 +12,6 @@
 
 html {
   overflow: hidden;
-  background: url('/static/img/background.jpg');
-  background-size: cover;
-  background-color: black;
 }
 
 html,
@@ -29,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  background: black;
   color: var(--primary);
   overflow-y: auto;
   align-content: start;
@@ -60,7 +57,7 @@ a[href]:visited {
 }
 
 a[href]:hover {
-  color: var(--secondary);
+  color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
@@ -71,10 +68,6 @@ img {
 
 h3 {
   font-weight: normal;
-}
-
-h4 {
-  color: var(--secondary);
 }
 
 h4:last-child {
@@ -92,7 +85,6 @@ h4:last-child {
 .lg-text {
   font-size: 1.3rem;
 }
-
 
 header,
 main,
@@ -136,9 +128,9 @@ header .container {
   flex-direction: row;
   background: rgba(255, 255, 255, 0.7);
   box-shadow: #fff 0.2px 0.2px 10px;
-  -ms-bacdrop-filter: none;
-  -webkit-backdrop-filter: invert(100%) blur(5px);
-  backdrop-filter: invert(100%) blur(5px);
+  -ms-backdrop-filter: none;
+  -webkit-backdrop-filter: invert(100%) blur(6px);
+  backdrop-filter: invert(100%) blur(6px);
   color: black !important;
   width: 90%;
   margin: 0 auto;
@@ -211,6 +203,7 @@ header nav li a[data-current="current item"] {
 
 section {
   display: flex;
+  flex-direction: column;
   padding: 3% 1%;
   place-content: center;
   place-items: center;
@@ -239,16 +232,18 @@ section .container {
   display: flex;
   flex-direction: row;
   gap: 3rem;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .days .container a {
   padding: 3rem;
   border: 2px solid white;
   border-radius: 20px;
-  box-shadow: #fff 1px 1px 10px;
+  box-shadow: #fff 0px 1px 1rem;
+  background: rgba(255, 255, 255, 0);
+  color: white;
   width: 50%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .days .container a:hover {
@@ -324,8 +319,8 @@ textarea {
 button {
   font-size: inherit;
   font-family: inherit;
-  border: 1px solid white;
-  box-shadow: #fff 0.1px 0.1px 10px;
+  border: 1px solid black;
+  box-shadow: #000 0px 0.5px 5px;
   background: black;
   color: white;
   cursor: pointer;
@@ -337,8 +332,9 @@ button {
 }
 
 button:hover {
-  background: var(--secondary);
+  background: white;
   color: black;
+  border: 1px solid black;
 }
 
 @media screen and (min-width: 768px) {
