@@ -2,8 +2,13 @@
 layout: layouts/base.njk
 section: contact
 ---
-<h1>{{ title }}</h1>
 
-{{ layoutContent | safe }}
+<section>
+  <div class="container">
+    <div class="text">
+      {{ layoutContent | safe }}
 
-{% include "components/form.njk" %}
+      {% include "components/form.njk" %}
+    </div>
+  </div>
+</section>
