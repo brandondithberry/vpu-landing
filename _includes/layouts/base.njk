@@ -6,25 +6,17 @@
     <header>
       <div class="container">
         <div class="logo">
-          <a href="{{ '/' | url }}"
-            ><img src="/static/img/logo-black.png" alt="logo"
-          /></a>
+          <a href="{{ '/' | url }}">
+            <img src="/static/img/logo-black.png" alt="logo" />
+          </a>
         </div>
         <div class="menu">
           <nav>
             <ul>
-              <li>
-                <a href="/day1/index.html">Day One</a>
-              </li>
-              <li>
-                <a href="/day2/index.html">Day Two</a>
-              </li>
-              <li>
-                <a href="/speakers/index.html">Speakers</a>
-              </li>
-              <li>
-                <a href="/partners/index.html">Partners</a>
-              </li>
+              <li><a href="/day1/index.html">Day One</a></li>
+              <li><a href="/day2/index.html">Day Two</a></li>
+              <li><a href="/speakers/index.html">Speakers</a></li>
+              <li><a href="/partners/index.html">Partners</a></li>
             </ul>
           </nav>
         </div>
@@ -32,18 +24,27 @@
           <a href="/getaccess/index.html"><button>Request Access</button></a>
         </div>
         <div class="menu-toggle">
-          <a href="#">+</a>
+          <span id="menuToggle">+</span>
         </div>
       </div>
     </header>
 
-    <img class="top-blob" src="/static/img/blob1.svg" alt="Top Blob" />
-    <img class="bottom-blob" src="/static/img/blob2.svg" alt="Bottom Blob" />
-    <img class="crop-right" src="/static/img/crop-right.svg" alt="Crop Right" />
-    <img class="crop-left" src="/static/img/crop-left.svg" alt="Crop Left" />
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="menu">
+        <a href="/day1/index.html">Day One</a>
+        <a href="/day2/index.html">Day Two</a>
+        <a href="/speakers/index.html">Speakers</a>
+        <a href="/partners/index.html">Partners</a>
+      </div>
+      <div class="cta">
+        <a href="/getaccess/index.html"><button>Request Access</button></a>
+      </div>
+    </div>
 
     <main>
       {{ layoutContent | safe }}
     </main>
+
+    {% include "components/footer.njk" %}
   </body>
 </html>

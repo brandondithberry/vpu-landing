@@ -1,5 +1,10 @@
 <footer>
   <div class="container">
-    <p>© 2024 The Garage, LLC. - All Rights Reserved</p>
+    <p class="sm-text">© 2024 The Garage, LLC. - All Rights Reserved</p>
+    <p class="sm-text">Created by <a href="https://brandondithberry.com"><u>Brandon Dith-Berry</u></a></p>
   </div>
+  {% set js %} {% include "assets/js/inline.js" %} {% endset %}
+  <script>
+    {{ js | jsmin | safe }}
+  </script>
 </footer>

@@ -38,9 +38,8 @@ body {
 
 main {
   position: relative;
-  margin: 10% auto 0;
+  margin: 4rem auto 0;
   height: auto;
-  padding: 1rem;
 }
 
 p,
@@ -51,7 +50,7 @@ code {
 
 a[href],
 a[href]:visited {
-  color: inherit;
+  color: black;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
 }
@@ -79,10 +78,6 @@ h3 {
 
 .lg-text {
   font-size: 1.1rem;
-}
-
-.sm-text {
-  font-size: 0.8rem;
 }
 
 pre {
@@ -142,14 +137,10 @@ header .cta {
   display: none;
 }
 
-header .menu-toggle span {
+header .menu-toggle a {
   font-size: 2.4rem;
   color: black;
   cursor: pointer;
-}
-
-span.active {
-  transform: rotate(-0.25turn);
 }
 
 .mobile-menu {
@@ -173,11 +164,11 @@ span.active {
   gap: 2rem;
   border-radius: 2rem;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   transform: translateX(-50%) translateY(-100%);
 }
 
-.mobile-menu.active {
+.mobile-menu .active {
   display: flex;
   transform: translateX(-50%) translateY(0);
   opacity: 1;
@@ -218,7 +209,7 @@ nav li a[data-current="current item"] {
 section {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem 4rem;
+  padding: 10px 10px 7rem;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
@@ -254,15 +245,6 @@ section .container {
 .days .container a:hover {
   background: var(--primary);
   color: var(--background);
-}
-
-footer {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  place-content: center;
-  place-items: center;
-  padding: 1rem;
 }
 
 /* Posts List */
