@@ -37,10 +37,9 @@ body {
 }
 
 main {
-  position: relative;
-  margin: 20% auto 0;
+  width: 100%;
+  margin: 5rem auto 0;
   height: auto;
-  padding: 1rem;
 }
 
 hr {
@@ -90,6 +89,12 @@ h3 {
 
 .sm-text {
   font-size: 0.8rem;
+}
+
+.text {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 pre {
@@ -306,16 +311,19 @@ span.active {
 section {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem 3rem;
+  padding: 3rem 2rem;
   justify-content: center;
   align-items: start;
   overflow-x: hidden;
   text-align: left;
   border-color: white;
+  width: 100%;
 }
 
 section .container {
+  margin: 0 auto;
   width: 100%;
+  max-width: 990px;
 }
 
 section.alt {
@@ -327,7 +335,8 @@ section.alt {
 .homepage .logo {
   display: block;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .days .container {
@@ -385,5 +394,17 @@ footer {
 
   header .menu-toggle {
     display: none;
+  }
+
+  .homepage {
+    text-align: center;
+  }
+
+  .days .container {
+    flex-direction: row;
+  }
+
+  .days .container a {
+    width: 50%;
   }
 }
