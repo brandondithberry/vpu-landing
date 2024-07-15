@@ -461,6 +461,16 @@ section.alt {
   gap: 3rem;
 }
 
+.partners a {
+  filter: saturate(0);
+  opacity: 0.9;
+}
+
+.partners a:hover {
+  filter: saturate(1);
+  opacity: 1;
+}
+
 .partners .large-logos img {
   width: 100%;
   max-width: 180px;
