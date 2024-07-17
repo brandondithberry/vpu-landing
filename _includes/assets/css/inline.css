@@ -41,6 +41,7 @@ main {
   width: 100%;
   margin: 0 auto;
   height: auto;
+  margin-top: 4rem;
 }
 
 hr {
@@ -64,7 +65,7 @@ a[href]:visited {
 }
 
 a[href]:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 img {
@@ -108,7 +109,6 @@ pre {
   word-spacing: normal;
   word-break: normal;
   tab-size: 2;
-  hyphens: none;
   padding: 1em;
   margin: 0.5em 0;
 }
@@ -124,7 +124,7 @@ nav li {
 }
 
 nav li a {
-  padding: 0.25em 0.4em;
+  padding: 0.25em 0.5em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -189,7 +189,7 @@ textarea {
 }
 
 button {
-  font-size: 0.7rem;
+  font-size: inherit;
   font-family: inherit;
   border: 1px solid black;
   box-shadow: 0 0.5px 5px #000;
@@ -237,15 +237,16 @@ header .container {
   display: flex;
   background: rgba(255, 255, 255, 0.8);
   box-shadow: 0 1px 5px #fff;
-  -ms-backdrop-filter: none;
   -webkit-backdrop-filter: invert(100%) blur(6px);
   backdrop-filter: invert(100%) blur(6px);
+  background-clip: text;
   color: black !important;
   width: 90%;
   margin: 0 auto;
   border-radius: 50rem;
-  padding: 0.1rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   justify-content: space-between;
+  align-content: center;
   align-items: center;
   text-transform: uppercase;
 }
@@ -268,6 +269,7 @@ header .cta {
 }
 
 header .menu-toggle span {
+  display: block;
   font-size: 2.4rem;
   color: black;
   cursor: pointer;
@@ -327,7 +329,7 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 4% 1.5rem;
+  padding: 5% 1.5rem;
   justify-content: center;
   align-items: start;
   overflow-x: hidden;
@@ -351,12 +353,13 @@ section.alt {
   border-color: blacks;
 }
 
-.homepage {
+.hero {
   border-bottom: 1px solid white;
   padding: 6rem 1.5rem;
+  overflow: visible;
 }
 
-.homepage .artwork {
+.hero .artwork {
   position: absolute;
   display: block;
   width: 100vw;
@@ -366,7 +369,7 @@ section.alt {
   top: 0;
 }
 
-.homepage .artwork .top-blob {
+.hero .artwork .top-blob {
   position: absolute;
   display: block;
   right: -2rem;
@@ -375,7 +378,7 @@ section.alt {
   max-width: 220px;
 }
 
-.homepage .artwork .bottom-blob {
+.hero .artwork .bottom-blob {
   position: absolute;
   display: block;
   left: 0;
@@ -384,7 +387,7 @@ section.alt {
   max-width: 220px;
 }
 
-.homepage .artwork .top-crop {
+.hero .artwork .top-crop {
   position: absolute;
   display: block;
   left: 10px;
@@ -393,7 +396,7 @@ section.alt {
   max-width: 40px;
 }
 
-.homepage .artwork .bottom-crop {
+.hero .artwork .bottom-crop {
   position: absolute;
   display: block;
   right: 10px;
@@ -402,7 +405,7 @@ section.alt {
   max-width: 40px;
 }
 
-.homepage .logo {
+.hero .logo {
   display: block;
   width: 100%;
   max-width: 500px;
@@ -437,9 +440,43 @@ section.alt {
   display: block;
 }
 
+.days .container .day button {
+  font-size: 0.7rem;
+}
+
 .days .container img {
   width: 100%;
   max-width: 500px;
+}
+
+.locations .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  gap: 1rem;
+}
+
+.locations .location {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  background: var(--primary);
+  color: var(--background);
+}
+
+.locations .location .text {
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+
+.locations .location .image {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .partners .container div {
@@ -522,7 +559,8 @@ footer {
     display: none;
   }
 
-  .homepage {
+  .hero {
+    padding: 15rem 1rem;
     text-align: center;
   }
 
@@ -530,12 +568,35 @@ footer {
     width: 50%;
   }
 
-  .homepage .artwork .top-blob {
+  .hero .artwork .top-blob {
     position: absolute;
     display: block;
     right: -3rem;
     top: -5rem;
     width: 20%;
     max-width: 220px;
+  }
+
+  .locations .location {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    background: var(--primary);
+    color: var(--background);
+  }
+  
+  .locations .location .text {
+    position: relative;
+    width: 60%;
+    padding: 1rem 2rem;
+  }
+  
+  .locations .location .image {
+    position: relative;
+    width: 40%;
+    height: 12rem;
+    background-size: cover;
+    background-position: center;
   }
 }
