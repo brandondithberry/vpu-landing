@@ -25,7 +25,7 @@ event:
       Presenter - Steve Giralt from The Garage
 
       Topics Covered: TBD
-  - title: 11:30 - 12:00 **\- Move to Abel Theater**
+  - title: "**11:30 - 12:00 - Move to Abel Theater**"
   - title: "**12:00 - 1:00** - PANEL DISCUSSION: **Virtual Production Workflow and
       Budgeting**"
     location: Abel Theater
