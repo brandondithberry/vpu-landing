@@ -1,6 +1,7 @@
 ---
 logo: /static/img/luxlighting (over dark).png
 partner: Lux Lighting
+title: Lux Lighting
 website: https://luxlightingllc.com/
 blurb: Your Bespoke Lighting support partner, providing NY, LA & Atlanta with
   all Cinema lighting rentals, sales, and repairs. Our crew is dedicated to
