@@ -43,10 +43,10 @@ collections:
     folder: "content/partners"
     create: true
     fields:
-    - {label: Logo, name: logo, widget: image}
     - {label: Partner, name: title, widget: string}
     - {label: Website, name: website, widget: string}
     - {label: Blurb, name: blurb, widget: markdown}
+    - {label: Logo, name: logo, widget: image}
   - label: "Speakers"
     name: "speakers"
     folder: content/speakers"
