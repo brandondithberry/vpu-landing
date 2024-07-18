@@ -1,6 +1,6 @@
 ---
-speaker: Barry Willams
-company: Trilith Studios
-role: "Director of Creative Technologies "
-mainviewpoint: World Building / VAD / Workflow
+speaker: "Alex Coppedge "
+company: "Independent "
+role: VFX / VP Supervisor
+mainviewpoint: World building / VAD / Workflow / streamlining asset creation
 ---
