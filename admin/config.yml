@@ -19,7 +19,7 @@ collections:
     folder: "partners"
     create: true
     fields:
+    - {label: Logo, name: logo, widget: image}
     - {label: Partner, name: partner, widget: string}
     - {label: Website, name: website, widget: string}
     - {label: Blurb, name: blurb, widget: markdown}
-    - {label: Logo, name: logo, widget: image}
