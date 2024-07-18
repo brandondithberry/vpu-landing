@@ -15,6 +15,8 @@ eleventyNavigation:
 
 Continental breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored by Lux Machina)
 
+
+
 **9:30-10:00 AM - PRESENTATION: Opening Remarks** 
 
 *Presenter - Steve Giralt from The Garage*
@@ -59,7 +61,7 @@ Topics Covered: TBD
 
 
 
-2:45 - 3:00  - Break  
+**2:45 - 3:00  - Break**  
 
 
 
@@ -87,4 +89,4 @@ Topics Covered: TBD
 
 
 
-**5:00 - 7 PM - Networking Happy Hour (Sponsored by Lux Lighting and Kino Flo)**  
+**5:00 - 7 PM - Networking Happy Hour (Sponsored by Lux Lighting and Kino Flo)**
