@@ -6,10 +6,10 @@ backend:
   branch: master # The branch to update (optional; defaults to master)
 
 # Uncomment below to enable drafts https://www.decapcms.org/docs/add-to-your-site/#editorial-workflow
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 # Uncomment below to enable a link to your published site in the header bar of Decap CMS
-# site_url: https://eleventy-netlify-boilerplate.netlify.app/
+site_url: https://virtualproductionunplugged.com
 
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 
@@ -47,7 +47,7 @@ collections:
     create: true
     fields:
     - {label: Logo, name: logo, widget: image}
-    - {label: Partner, name: partner, widget: string}
+    - {label: Partner, name: title, widget: string}
     - {label: Website, name: website, widget: string}
     - {label: Blurb, name: blurb, widget: markdown}
   - label: "Speakers"
@@ -55,7 +55,7 @@ collections:
     folder: content/speakers"
     create: true
     fields:
-    - {label: Speaker, name: speaker, widget: string}
+    - {label: Speaker, name: title, widget: string}
     - {label: Company, name: company, widget: string}
     - {label: Role, name: role, widget: string}
     - {label: Main Viewpoint, name: mainviewpoint, widget: string}
