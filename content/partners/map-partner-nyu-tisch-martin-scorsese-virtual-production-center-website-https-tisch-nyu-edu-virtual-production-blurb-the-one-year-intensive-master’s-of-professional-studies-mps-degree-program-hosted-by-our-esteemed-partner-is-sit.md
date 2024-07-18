@@ -1,6 +1,7 @@
 ---
 logo: /static/img/NYU-MSVPC_LockupArt_WHITE.png
 partner: NYU Tisch Martin Scorsese Virtual Production Center
+title: NYU Tisch Martin Scorsese Virtual Production Center
 website: https://tisch.nyu.edu/virtual-production
 blurb: The one-year intensive Master’s of Professional Studies (MPS) degree
   program, hosted by our esteemed partner, is situated within a cutting-edge
