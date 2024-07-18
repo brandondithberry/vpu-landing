@@ -1,6 +1,7 @@
 ---
 logo: /static/img/AbelCine.png
 partner: AbelCine
+title: AbelCine
 website: https://www.abelcine.com/
 blurb: AbelCine is an equipment and service provider to cinematic content
   creators across the broadcast, production, and media industries. The company’s
