@@ -1,6 +1,6 @@
 ---
-speaker: Ross Fenter
-company: Hologen.io
-role: EP /  World Building
+speaker: Barry Willams
+company: Trilith Studios
+role: "Director of Creative Technologies "
 mainviewpoint: World Building / VAD / Workflow
 ---
