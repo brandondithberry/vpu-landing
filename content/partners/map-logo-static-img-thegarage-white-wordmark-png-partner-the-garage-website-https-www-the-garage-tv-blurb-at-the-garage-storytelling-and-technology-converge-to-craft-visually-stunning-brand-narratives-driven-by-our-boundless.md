@@ -1,6 +1,7 @@
 ---
 logo: /static/img/thegarage-white-wordmark.png
 partner: The Garage
+title: The Garage
 website: https://www.the-garage.tv/
 blurb: At The Garage, storytelling and technology converge to craft visually
   stunning brand narratives, driven by our boundless passion for creativity and
