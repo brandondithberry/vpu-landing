@@ -22,15 +22,25 @@ collections:
         file: "days/july31st.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Location, name: location, widget: string}
-          - {label: Info, name: info, widget: markdown}
+          - label: Event
+            name: event
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Location, name: location, widget: string}
+              - {label: Info, name: info, widget: markdown}
       - label: "August 1st"
         name: "august1st"
         file: "days/august1st.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Location, name: location, widget: string}
-          - {label: Info, name: info, widget: markdown}
+          - label: Event
+            name: event
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Location, name: location, widget: string}
+              - {label: Info, name: info, widget: markdown}
   - label: "Partners"
     name: "partners"
     folder: "partners/partner"
