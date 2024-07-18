@@ -27,8 +27,8 @@ collections:
             widget: list
             fields:
               - {label: Title, name: title, widget: markdown, minimal: true}
-              - {label: Location, name: location, widget: string}
-              - {label: Info, name: info, widget: markdown}
+              - {label: Location, name: location, widget: string, required: false}
+              - {label: Info, name: info, widget: markdown, required: false}
       - label: "August 1st"
         name: "august1st"
         file: "days/august1st.md"
@@ -39,8 +39,8 @@ collections:
             widget: list
             fields:
               - {label: Title, name: title, widget: markdown, minimal: true}
-              - {label: Location, name: location, widget: string}
-              - {label: Info, name: info, widget: markdown}
+              - {label: Location, name: location, widget: string, required: false}
+              - {label: Info, name: info, widget: markdown, required: false}
   - label: "Partners"
     name: "partners"
     folder: "partners/partner"
