@@ -14,12 +14,11 @@ backend:
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 
 collections:
-  # Our pages e.g. About
-  - name: "pages"
-    label: "Page"
-    folder: "pages"
-    create: false # Change to true to allow editors to create new pages
-    slug: "{{slug}}"
+  - label: "Partners"
+    name: "partners"
+    folder: "partners"
+    create: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    - {label: Partner, name: partner, widget: string}
+    - {label: Blurb, name: blurb, widget: markdown}
+    - {label: Logo, name: logo, widget: image}
