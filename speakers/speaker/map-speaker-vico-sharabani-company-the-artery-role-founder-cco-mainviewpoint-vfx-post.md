@@ -1,6 +1,6 @@
 ---
-speaker: Paola Andrea
-company: Le Prop Room
-role: Production Designer
-mainviewpoint: VAD / Production Design
+speaker: Mike Bauman
+company: Lux / LiteGear
+role: Gaffer / co-founder
+mainviewpoint: Lighting
 ---
