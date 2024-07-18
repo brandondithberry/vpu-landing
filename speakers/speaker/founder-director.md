@@ -1,7 +1,7 @@
 ---
 speaker: Steve Giralt
 company: The Garage
-title: Founder / Director
+role: Founder / Director
 mainviewpoint: Creative Technology
 dates: July 31-August 1
 type:
@@ -25,5 +25,6 @@ bio: >-
 
 
   Steve Giralt, Director, DP, and Photographer, leads The Garage with a passion for innovation and creative exploration. His visionary image-making blends cutting-edge tools with boundless imagination, crafting narratives that resonate globally.
+title: Founder / Director
 headshot: /static/img/steve.jpg
 ---
