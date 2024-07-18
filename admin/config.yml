@@ -22,11 +22,11 @@ collections:
         file: "days/july31st.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - label: Event
-            name: event
+          - label: Events
+            name: events
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
+              - {label: Event, name: event, widget: string}
               - {label: Location, name: location, widget: string}
               - {label: Info, name: info, widget: markdown}
       - label: "August 1st"
