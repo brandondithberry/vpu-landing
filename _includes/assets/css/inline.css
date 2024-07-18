@@ -356,6 +356,10 @@ section .container {
   max-width: 990px;
 }
 
+section h3:not(:first-child) {
+  margin-top:3rem;
+}
+
 section.alt {
   background: var(--primary);
   color: var(--background);
