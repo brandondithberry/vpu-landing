@@ -49,7 +49,7 @@ collections:
     - {label: Logo, name: logo, widget: image}
   - label: "Speakers"
     name: "speakers"
-    folder: content/speakers"
+    folder: "content/speakers"
     create: true
     fields:
     - {label: Speaker, name: title, widget: string}
