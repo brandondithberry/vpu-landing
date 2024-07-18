@@ -1,4 +1,5 @@
 ---
+layout: /layouts/day.njk
 title: July 31st - Creative Professionals Schedule of Events
 events:
   - title: "**8:30-9:30 AM** - Arrival"

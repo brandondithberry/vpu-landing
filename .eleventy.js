@@ -92,10 +92,15 @@ module.exports = function (eleventyConfig) {
     permalink: false,
   };
 
-  eleventyConfig.setLibrary(
-    "md",
-    markdownIt(options).use(markdownItAnchor, opts).use(markdownItAttrs)
-  );
+  const markdownLib = markdownIt(options)
+    .use(markdownItAnchor, opts)
+    .use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", markdownLib);
+
+  // Add Markdown filter
+  eleventyConfig.addFilter("markdown", (content) => {
+    return markdownLib.render(content);
+  });
 
   return {
     templateFormats: ["md", "njk", "liquid"],

@@ -1,6 +1,7 @@
 ---
+layout: /layouts/day.njk
 title: Aug 1 - Advertising and Marketing Industry Professionals Schedule of Events
-event:
+events:
   - title: "**8:30-9:30 AM** - Arrival"
     location: The Garage
     info: |-
@@ -26,7 +27,8 @@ event:
 
       Topics Covered: TBD
   - title: "**11:30 - 12:00 - Move to Abel Theater**"
-  - title: "**12:00 - 1:00** - PANEL DISCUSSION: **Virtual Production Workflow and
+  - title:
+      "**12:00 - 1:00** - PANEL DISCUSSION: **Virtual Production Workflow and
       Budgeting**"
     location: Abel Theater
     info: |-
@@ -36,7 +38,8 @@ event:
 
       Topics Covered: TBD
   - title: "**1:00 - 2:00 -** Catered Lunch (Sponsored by Abel Cine)"
-  - title: "**2:00 - 3:00** - PANEL DISCUSSION: **Could I shoot ‘This’ with Virtual
+  - title:
+      "**2:00 - 3:00** - PANEL DISCUSSION: **Could I shoot ‘This’ with Virtual
       Production?**"
     location: Abel Theater
     info: |-
@@ -47,7 +50,8 @@ event:
       Topics Covered: TBD
   - title: 3:00 - 3:30 **\- Move to NYU Tisch Martin Scorsese Virtual Production
       Center**
-  - title: "**3:30 - 4:30** - DEMO: **Martin Scorsese Virtual Production Center Demo
+  - title:
+      "**3:30 - 4:30** - DEMO: **Martin Scorsese Virtual Production Center Demo
       with RDX / Rosco**"
     location: "NYU Tisch Martin Scorsese Virtual Production Center "
     info: |-

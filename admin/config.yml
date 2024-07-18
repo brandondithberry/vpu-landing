@@ -31,8 +31,8 @@ collections:
         file: "content/days/august1st.md"
         fields:
           - {label: Title, name: title, widget: string}
-          - label: Event
-            name: event
+          - label: Events
+            name: events
             widget: list
             fields:
               - {label: Title, name: title, widget: markdown, minimal: true}

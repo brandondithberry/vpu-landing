@@ -44,7 +44,19 @@
     </div>
 
     <main>
-      {{ layoutContent | safe }}
+      <h1>{{ title }}</h1>
+      <ul>
+        {% for event in events %}
+        <li>
+          <strong>{{ event.title | markdown | safe }}</strong
+          ><br />
+          {% if event.location %}Location: {{ event.location | markdown | safe
+          }}<br />{% endif %} {% if event.info %}
+          {{ event.info | markdown | safe }}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
     </main>
 
     {% include "components/footer.njk" %}
