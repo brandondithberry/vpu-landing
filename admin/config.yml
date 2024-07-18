@@ -16,7 +16,7 @@ collections:
     files:
       - label: "July 31st"
         name: "july31st"
-        file: "content/days/july31st.md"
+        file: "pages/july31st.md"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Events
@@ -28,7 +28,7 @@ collections:
               - {label: Info, name: info, widget: markdown, required: false}
       - label: "August 1st"
         name: "august1st"
-        file: "content/days/august1st.md"
+        file: "pages/august1st.md"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Events
