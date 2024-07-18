@@ -1,6 +1,7 @@
 ---
 logo: /static/img/nabshow.png
 partner: NAB (National Association of Broadcasters)
+title: NAB (National Association of Broadcasters)
 website: https://nabshow.com/
 blurb: NAB Show is the preeminent conference and exhibition driving the
   evolution of broadcast, media, and entertainment. Produced by the National
