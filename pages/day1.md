@@ -1,5 +1,5 @@
 ---
-title: "Day 1: July 31"
+title: July 31st - Creative Professionals Schedule of Events
 metaDescription: This is a sample meta description. If one is not present in
   your page/post's front matter, the default metadata.description will be used
   instead.
