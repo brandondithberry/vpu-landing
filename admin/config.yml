@@ -36,7 +36,7 @@ collections:
     - label: "Type"
       name: "type"
       widget: "select"
-      mutliple: true
+      multiple: true
       options: ["Moderator", "Panelist"]
     - {label: Bio, name: bio, widget: markdown}
     - {label: Headshot, name: headshot, widget: image}
