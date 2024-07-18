@@ -20,5 +20,6 @@ collections:
     create: true
     fields:
     - {label: Partner, name: partner, widget: string}
+    - {label: Website, name: website, widget: string}
     - {label: Blurb, name: blurb, widget: markdown}
     - {label: Logo, name: logo, widget: image}
