@@ -26,7 +26,7 @@ events:
 
       Topics Covered: TBD
     location: The Garage
-  - title: "**12:30 - 1:30** - Lunch Break at Industry City"
+  - title: "**12:30 - 1:30 - Lunch Break at Industry City**"
   - title: "**1:30 - 2:45** - PANEL DISCUSSION: **Virtual and On-Set lighting for
       Virtual Production**"
     location: Abel Theater
@@ -36,7 +36,7 @@ events:
       Panelists: TBD + Bio’s
 
       Topics Covered: TBD
-  - title: "**2:45 - 3:00  -** Break"
+  - title: "**2:45 - 3:00  - Break**"
   - title: "**3:00 - 4:00**  -  PANEL DISCUSSION: **TBD Panel #2 + Q&A**"
     location: Abel Theater
     info: |-
@@ -45,7 +45,7 @@ events:
       Panelists: TBD + Bio’s
 
       Topics Covered: TBD
-  - title: "**4:00 - 4:15 -** Break / Move Back To The Garage"
+  - title: "**4:00 - 4:15 - Break / Move Back To The Garage**"
   - title: "**4:15 - 5:00 -** DEMO: **Advanced Virtual Production Demo**"
     location: The Garage
     info: |-
