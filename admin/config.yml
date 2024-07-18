@@ -16,7 +16,7 @@ media_folder: "static/img" # Media files will be stored in the repo under images
 collections:
   - label: "Partners"
     name: "partners"
-    folder: "partners"
+    folder: "partners/partner"
     create: true
     fields:
     - {label: Logo, name: logo, widget: image}
@@ -25,7 +25,7 @@ collections:
     - {label: Blurb, name: blurb, widget: markdown}
   - label: "Speakers"
     name: "speakers"
-    folder: "speakers"
+    folder: "speakers/speaker"
     create: true
     fields:
     - {label: Speaker, name: speaker, widget: string}
