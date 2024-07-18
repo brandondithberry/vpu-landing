@@ -19,7 +19,7 @@ collections:
     files:
       - label: "July 31st"
         name: "july31st"
-        file: "days/july31st.md"
+        file: "content/days/july31st.md"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Events
@@ -31,7 +31,7 @@ collections:
               - {label: Info, name: info, widget: markdown, required: false}
       - label: "August 1st"
         name: "august1st"
-        file: "days/august1st.md"
+        file: "content/days/august1st.md"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Event
@@ -43,7 +43,7 @@ collections:
               - {label: Info, name: info, widget: markdown, required: false}
   - label: "Partners"
     name: "partners"
-    folder: "partners"
+    folder: "content/partners"
     create: true
     fields:
     - {label: Logo, name: logo, widget: image}
@@ -52,7 +52,7 @@ collections:
     - {label: Blurb, name: blurb, widget: markdown}
   - label: "Speakers"
     name: "speakers"
-    folder: "speakers"
+    folder: content/speakers"
     create: true
     fields:
     - {label: Speaker, name: speaker, widget: string}
