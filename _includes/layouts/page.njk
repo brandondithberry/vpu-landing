@@ -1,10 +1,53 @@
----
-layout: layouts/base.njk
-section: page
----
-<section>
-  <div class="container">
-    <h1>{{ title }}</h1>
-    {{ layoutContent | safe }}
-  </div>
-</section>
+<!DOCTYPE html>
+<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
+  {% include "components/head.njk" %}
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="{{ '/' | url }}">
+            <img src="/static/img/logo-black.png" alt="logo" />
+          </a>
+        </div>
+        <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="/day1/index.html">July 31st</a></li>
+              <li><a href="/day2/index.html">August 1st</a></li>
+              <li><a href="/speakers/index.html">Speakers</a></li>
+              <li><a href="/partners/index.html">Partners</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="cta">
+          <a href="/getaccess/index.html"><button>Request Access</button></a>
+        </div>
+        <div class="menu-toggle">
+          <span id="menuToggle">+</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="menu">
+        <a href="/day1/index.html">July 31st</a>
+        <a href="/day2/index.html">August 1st</a>
+        <a href="/speakers/index.html">Speakers</a>
+        <a href="/partners/index.html">Partners</a>
+      </div>
+      <div class="cta">
+        <a href="/getaccess/index.html"><button>Request Access</button></a>
+      </div>
+    </div>
+
+    <main>
+      <div class="text">
+        <h1>{{ title }}</h1>
+        {{ layoutContent | safe }}
+      </div>
+    </main>
+
+    {% include "components/footer.njk" %}
+  </body>
+</html>

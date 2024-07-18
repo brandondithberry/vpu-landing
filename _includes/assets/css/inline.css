@@ -78,6 +78,10 @@ h4 {
   font-weight: normal;
 }
 
+h3:not(:first-child) {
+  margin-top: 3rem;
+}
+
 .xxl-text {
   font-size: 1.7rem;
 }
@@ -96,8 +100,9 @@ h4 {
 
 .text {
   width: 100%;
-  max-width: 500px;
+  max-width: 570px;
   margin: 0 auto;
+  text-align: center;
 }
 
 pre {
@@ -250,14 +255,30 @@ header .container {
 }
 
 @keyframes flicker {
-  0% { box-shadow: #fff 0 1px 10px; }
-  10% { box-shadow: #fff 1px 2px 5px; }
-  30% { box-shadow: #fff 0 1px 8px; }
-  50% { box-shadow: #fff 1px 1px 13px; }
-  60% { box-shadow: #fff 2px 1px 8px; }
-  80% { box-shadow: #fff 0 1px 12px; }
-  90% { box-shadow: #fff 1px 1px 6px; }
-  100% { box-shadow: #fff 0 1px 10px; }
+  0% {
+    box-shadow: #fff 0 1px 10px;
+  }
+  10% {
+    box-shadow: #fff 1px 2px 5px;
+  }
+  30% {
+    box-shadow: #fff 0 1px 8px;
+  }
+  50% {
+    box-shadow: #fff 1px 1px 13px;
+  }
+  60% {
+    box-shadow: #fff 2px 1px 8px;
+  }
+  80% {
+    box-shadow: #fff 0 1px 12px;
+  }
+  90% {
+    box-shadow: #fff 1px 1px 6px;
+  }
+  100% {
+    box-shadow: #fff 0 1px 10px;
+  }
 }
 
 header .logo {
@@ -354,10 +375,6 @@ section .container {
   margin: 0 auto;
   width: 100%;
   max-width: 990px;
-}
-
-section h3:not(:first-child) {
-  margin-top:3rem;
 }
 
 section.alt {

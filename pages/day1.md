@@ -1,4 +1,5 @@
 ---
+layout: layouts/page.njk
 title: July 31st - Creative Professionals Schedule of Events
 permalink: /day1/index.html
 eleventyNavigation:
