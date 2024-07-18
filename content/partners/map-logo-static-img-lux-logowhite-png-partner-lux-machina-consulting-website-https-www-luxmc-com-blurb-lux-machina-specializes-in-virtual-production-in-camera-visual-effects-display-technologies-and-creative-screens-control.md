@@ -1,7 +1,7 @@
 ---
 logo: /static/img/Lux LogoWhite.png
 partner: Lux Machina Consulting
-title: Lux Machina
+title: Lux Machina Consulting
 website: https://www.luxmc.com/
 blurb: >-
   Lux Machina specializes in virtual production, in-camera visual effects,
