@@ -13,7 +13,7 @@ eleventyNavigation:
 
 *Location: The Garage*
 
-Continental breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored by Lux Machina)
+Continental breakfast (Sponsored by The Garage) and Coffee Bar (Sponsored by Lux Machina) 
 
 
 
@@ -45,9 +45,9 @@ Topics Covered: TBD
 
 
 
-**12:30 - 1:30 - Lunch Break at Industry City**  
+**12:30 - 1:30 - Lunch Break at Industry City** 
 
-
+ 
 
 **1:30 - 2:45 - PANEL DISCUSSION: Virtual and On-Set lighting for Virtual Production**
 
