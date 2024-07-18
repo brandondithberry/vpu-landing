@@ -33,6 +33,14 @@ module.exports = function (eleventyConfig) {
     }, {});
   });
 
+  eleventyConfig.addCollection("speakers", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("content/speakers/*.md");
+  });
+
+  eleventyConfig.addCollection("partners", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("content/partners/*.md");
+  });
+
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");

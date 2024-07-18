@@ -1,4 +1,5 @@
 ---
+layout: /layout/partners.njk
 title: Partners
 permalink: /partners/index.html
 eleventyNavigation:
