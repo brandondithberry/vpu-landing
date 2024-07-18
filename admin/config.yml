@@ -26,8 +26,7 @@ collections:
               - {label: Title, name: title, widget: markdown, minimal: true}
               - {label: Location, name: location, widget: string, required: false}
               - {label: Info, name: info, widget: markdown, required: false}
-        meta:
-            layout: "/layouts/day.njk"
+          - {label: "Layout", name: "layout", widget: "hidden", default: "/layouts/day.njk"}
       - label: "August 1st"
         name: "august1st"
         file: "pages/august1st.md"
@@ -40,8 +39,7 @@ collections:
               - {label: Title, name: title, widget: markdown, minimal: true}
               - {label: Location, name: location, widget: string, required: false}
               - {label: Info, name: info, widget: markdown, required: false}
-        meta:
-            layout: "/layouts/day.njk"
+          - {label: "Layout", name: "layout", widget: "hidden", default: "/layouts/day.njk"}
   - label: "Partners"
     name: "partners"
     folder: "content/partners"
@@ -51,8 +49,7 @@ collections:
     - {label: Website, name: website, widget: string}
     - {label: Blurb, name: blurb, widget: markdown}
     - {label: Logo, name: logo, widget: image}
-    meta:
-      layout: "/layouts/partner.njk"
+    - {label: "Layout", name: "layout", widget: "hidden", default: "/layouts/partner.njk"}
   - label: "Speakers"
     name: "speakers"
     folder: "content/speakers"
@@ -71,5 +68,4 @@ collections:
       options: ["Moderator", "Panelist"]
     - {label: Bio, name: bio, widget: markdown, required: false}
     - {label: Headshot, name: headshot, widget: image, required: false}
-    meta:
-      layout: "/layouts/speaker.njk"
+    - {label: "Layout", name: "layout", widget: "hidden", default: "/layouts/speaker.njk"}
