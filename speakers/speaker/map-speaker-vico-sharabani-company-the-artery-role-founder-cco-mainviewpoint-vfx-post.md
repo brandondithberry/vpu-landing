@@ -1,6 +1,6 @@
 ---
-speaker: Mike Bauman
-company: Lux / LiteGear
-role: Gaffer / co-founder
-mainviewpoint: Lighting
+speaker: Ross Fenter
+company: Hologen.io
+role: EP /  World Building
+mainviewpoint: World Building / VAD / Workflow
 ---
