@@ -64,6 +64,7 @@ collections:
       name: "type"
       widget: "select"
       multiple: true
-      options: ["Moderator", "Panelist", required: false]
+      required: false
+      options: ["Moderator", "Panelist"]
     - {label: Bio, name: bio, widget: markdown, required: false}
     - {label: Headshot, name: headshot, widget: image, required: false}
