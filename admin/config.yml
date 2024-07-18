@@ -43,7 +43,7 @@ collections:
               - {label: Info, name: info, widget: markdown, required: false}
   - label: "Partners"
     name: "partners"
-    folder: "partners/partner"
+    folder: "partners"
     create: true
     fields:
     - {label: Logo, name: logo, widget: image}
@@ -52,7 +52,7 @@ collections:
     - {label: Blurb, name: blurb, widget: markdown}
   - label: "Speakers"
     name: "speakers"
-    folder: "speakers/speaker"
+    folder: "speakers"
     create: true
     fields:
     - {label: Speaker, name: speaker, widget: string}
