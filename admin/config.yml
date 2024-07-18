@@ -57,7 +57,7 @@ collections:
     fields:
     - {label: Speaker, name: speaker, widget: string}
     - {label: Company, name: company, widget: string}
-    - {label: Title, name: title, widget: string}
+    - {label: Role, name: role, widget: string}
     - {label: Main Viewpoint, name: mainviewpoint, widget: string}
     - {label: Dates, name: dates, widget: string}
     - label: "Type"
