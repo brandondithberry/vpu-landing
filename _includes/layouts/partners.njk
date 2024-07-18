@@ -23,7 +23,7 @@
           </nav>
         </div>
         <div class="cta">
-          <a href="/getaccess/index.html"><button>Request Access</button></a>
+          <a href="/getaccess/index.html"><button>Sign Up</button></a>
         </div>
         <div class="menu-toggle">
           <span id="menuToggle">+</span>
@@ -39,19 +39,21 @@
         <a href="/partners/index.html">Partners</a>
       </div>
       <div class="cta">
-        <a href="/getaccess/index.html"><button>Request Access</button></a>
+        <a href="/getaccess/index.html"><button>Sign Up</button></a>
       </div>
     </div>
 
     <main>
       <h1>{{ title }}</h1>
       <ul>
-        {% for partner in partners %}
+        {% for partner in collections.partners %}
         <li>
-          <strong>{{ partner.title | markdown | safe }}</strong
-          ><br />
-          {% if partner.location %}Location: {{ partner.location | markdown | safe
-          }}<br />{% endif %} {% if partner.info %}
+          <strong>{{ partner.title | markdown | safe }}</strong>
+          <br />
+          {% if partner.location %} Location:
+          {{ partner.data.location | markdown | safe }}
+          <br />
+          {% endif %} {% if partner.info %}
           {{ partner.info | markdown | safe }}
           {% endif %}
         </li>
