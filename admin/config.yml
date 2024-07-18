@@ -26,8 +26,7 @@ collections:
             name: events
             widget: list
             fields:
-              - {label: Times, name: times, widget: string}
-              - {label: Title, name: title, widget: string}
+              - {label: Title, name: title, widget: markdown, minimal: true}
               - {label: Location, name: location, widget: string}
               - {label: Info, name: info, widget: markdown}
       - label: "August 1st"
@@ -39,8 +38,7 @@ collections:
             name: event
             widget: list
             fields:
-              - {label: Times, name: times, widget: string}
-              - {label: Title, name: title, widget: string}
+              - {label: Title, name: title, widget: markdown, minimal: true}
               - {label: Location, name: location, widget: string}
               - {label: Info, name: info, widget: markdown}
   - label: "Partners"
