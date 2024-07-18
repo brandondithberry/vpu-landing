@@ -23,3 +23,20 @@ collections:
     - {label: Partner, name: partner, widget: string}
     - {label: Website, name: website, widget: string}
     - {label: Blurb, name: blurb, widget: markdown}
+  - label: "Speakers"
+    name: "speakers"
+    folder: "speakers"
+    create: true
+    fields:
+    - {label: Speaker, name: speaker, widget: string}
+    - {label: Company, name: company, widget: string}
+    - {label: Title, name: title, widget: string}
+    - {label: Main Viewpoint, name: mainviewpoint, widget: string}
+    - {label: Dates, name: dates, widget: string}
+    - label: "Type"
+      name: "type"
+      widget: "select"
+      mutliple: true
+      options: ["Moderator", "Panelist"]
+    - {label: Bio, name: bio, widget: markdown}
+    - {label: Headshot, name: headshot, widget: image}
