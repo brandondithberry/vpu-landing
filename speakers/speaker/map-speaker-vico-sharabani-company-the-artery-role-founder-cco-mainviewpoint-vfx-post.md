@@ -1,6 +1,6 @@
 ---
-speaker: Vico Sharabani
-company: The Artery
-role: Founder/CCO
-mainviewpoint: VFX / POST
+speaker: Paola Andrea
+company: Le Prop Room
+role: Production Designer
+mainviewpoint: VAD / Production Design
 ---
