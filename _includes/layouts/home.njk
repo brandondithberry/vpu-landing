@@ -4,15 +4,9 @@ section: home
 ---
 
 <section class="hero">
-  <div class="container">
-    <div class="text">
-      <img class="logo" src="/static/img/logo.png" alt="VPU Logo" />
-      <h3>
-        Exploring how brands, agencies, and creatives use virtual production to
-        redefine their craft.
-      </h3>
-    </div>
-  </div>
+  <video autoplay loop muted>
+    <source src="/static/img/vpuvideo.mp4" type="video/mp4" />
+  </video>
   <div class="artwork">
     <img src="/static/img/blob1.svg" alt="Top Blob" class="top-blob" />
     <img src="/static/img/blob2.svg" alt="Bottom Blob" class="bottom-blob" />
@@ -27,13 +21,23 @@ section: home
 <section class="about">
   <div class="container">
     <div class="text">
+      <div class="text">
+        <img class="logo" src="/static/img/logo.png" alt="VPU Logo" />
+        <h3>
+          A hands-on exploration of how brands, agencies, and creatives are
+          leveraging virtual production to elevate their work
+        </h3>
+      </div>
       <h4>
-        Join us in Brooklyn for a two-day
-        <strong>Virtual Production Showcase</strong> featuring hands-on demos,
-        enlightening panel talks, focused sessions, and exclusive networking
-        happy hours as we celebrate innovation and collaboration in advertising.
+        Join us as we bring together our community of technologists, creatives
+        and thought leaders for two days of focused sessions around the topic of
+        VP for commercials, advertising and brand activations.
       </h4>
-      <img src="/static/img/background.jpg" alt="Virtual Production Room" />
+      <img
+        id="room"
+        src="/static/img/background.jpg"
+        alt="Virtual Production Room"
+      />
       <h2><strong>WHAT IS VIRTUAL PRODUCTION</strong></h2>
       <p>
         Virtual production utilizes large LED screens to display real-time
@@ -101,7 +105,8 @@ section: home
       <div class="text">
         <h3>
           <strong
-            >NYU Martin Scorsese Virtual Production Center (August 1st only)</strong
+            >NYU Martin Scorsese Virtual Production Center (August 1st
+            only)</strong
           >
         </h3>
         <hr />
@@ -117,7 +122,11 @@ section: home
 <section class="partners">
   <div class="container">
     <h2><strong>SPECIAL THANKS TO OUR PARTNERS</strong></h2>
-    <h4><a href="/partners/index.html"><button class="alt">Learn More About our Partners</button></a></h4>
+    <h4>
+      <a href="/partners/index.html"
+        ><button class="alt">Learn More About our Partners</button></a
+      >
+    </h4>
     <h3>Lead Partners</h3>
     <div class="large-logos">
       <a href="https://www.the-garage.tv/" target="_blank"

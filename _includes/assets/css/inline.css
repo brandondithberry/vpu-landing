@@ -41,7 +41,6 @@ main {
   width: 100%;
   margin: 0 auto;
   height: auto;
-  margin-top: 4rem;
 }
 
 hr {
@@ -224,38 +223,48 @@ button:hover {
 ------------------------------------*/
 
 header {
-  position: fixed;
+  position: sticky;
   display: flex;
-  top: 10px;
+  top: 0;
   width: 100%;
   z-index: 100;
   justify-content: center;
   align-items: center;
+  padding: 0.6rem 0;
 }
 
 header .container {
   display: flex;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 1px 5px #fff;
-  -webkit-backdrop-filter: invert(100%) blur(6px);
-  backdrop-filter: invert(100%) blur(6px);
-  background-clip: text;
+  background: white;
+  box-shadow: #fff 0 1px 10px;
   color: black !important;
   width: 90%;
   margin: 0 auto;
   border-radius: 50rem;
-  padding: 0.5rem 1.25rem;
+  padding: 0.6rem 1.25rem;
   justify-content: space-between;
   align-content: center;
   align-items: center;
   text-transform: uppercase;
+  animation: flicker 2s linear infinite;
+}
+
+@keyframes flicker {
+  0% { box-shadow: #fff 0 1px 10px; }
+  10% { box-shadow: #fff 1px 2px 5px; }
+  30% { box-shadow: #fff 0 1px 8px; }
+  50% { box-shadow: #fff 1px 1px 13px; }
+  60% { box-shadow: #fff 2px 1px 8px; }
+  80% { box-shadow: #fff 0 1px 12px; }
+  90% { box-shadow: #fff 1px 1px 6px; }
+  100% { box-shadow: #fff 0 1px 10px; }
 }
 
 header .logo {
   display: flex;
   justify-content: center;
-  width: 38vw;
-  max-width: 180px;
+  width: 36vw;
+  max-width: 150px;
 }
 
 header .logo img {
@@ -355,8 +364,18 @@ section.alt {
 
 .hero {
   border-bottom: 1px solid white;
-  padding: 6rem 1.5rem;
-  overflow: visible;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -100;
+  object-fit: cover;
 }
 
 .hero .artwork {
@@ -416,7 +435,7 @@ section.alt {
   text-align: center;
 }
 
-.about img {
+.about img#room {
   border: 2px solid white;
   border-radius: 10px;
 }
@@ -534,8 +553,22 @@ footer {
   padding: 1rem;
 }
 
+/* TABLET STYLING
+____________________________________*/
+
+@media screen and (min-width: 768px) {
+  header .container {
+    flex-direction: row;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .hero {
+    height: 50vw;
+  }
+}
+
 /* DESKTOP STYLING
-------------------------------------*/
+____________________________________*/
 
 @media screen and (min-width: 990px) {
   :root {
@@ -544,7 +577,7 @@ footer {
 
   header .container {
     flex-direction: row;
-    padding: 0.5rem 1.5rem;
+    padding: 0.4rem 1.5rem;
   }
 
   header .menu {
@@ -585,13 +618,13 @@ footer {
     background: var(--primary);
     color: var(--background);
   }
-  
+
   .locations .location .text {
     position: relative;
     width: 60%;
     padding: 1rem 2rem;
   }
-  
+
   .locations .location .image {
     position: relative;
     width: 40%;
