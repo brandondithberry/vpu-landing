@@ -17,7 +17,6 @@ collections:
       - label: "July 31st"
         name: "july31st"
         file: "pages/july31st.md"
-        slug: "{{slug}}"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Events
@@ -31,7 +30,6 @@ collections:
       - label: "August 1st"
         name: "august1st"
         file: "pages/august1st.md"
-        slug: "{{slug}}"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Events
@@ -42,8 +40,8 @@ collections:
               - {label: Location, name: location, widget: string, required: false}
               - {label: Info, name: info, widget: markdown, required: false}
           - {label: Layout, name: layout, widget: hidden, default: /layouts/day.njk}
-  - label: "Partners"
-    name: "partners"
+  - name: "partners"
+    label: "Partners"
     folder: "partners"
     create: true
     slug: "{{slug}}"
@@ -52,8 +50,8 @@ collections:
     - {label: Website, name: website, widget: string}
     - {label: Blurb, name: blurb, widget: markdown}
     - {label: Logo, name: logo, widget: image}
-  - label: "Speakers"
-    name: "speakers"
+  - name: "speakers"
+    label: "Speakers"
     folder: "speakers"
     create: true
     slug: "{{slug}}"
