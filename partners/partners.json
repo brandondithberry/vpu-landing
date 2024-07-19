@@ -1,0 +1,8 @@
+{
+    "layout": "layouts/partner.njk",
+    "permalink": "partners/{{ title | slug }}/index.html",
+    "author": "Anonymous",
+    "tags": [
+      "partner"
+    ]
+  }

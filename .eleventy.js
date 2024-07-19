@@ -82,6 +82,10 @@ module.exports = function (eleventyConfig) {
     "/_includes/assets/js/main.js": "assets/js/main.js",
   });
 
+  eleventyConfig.addCollection("speakers", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("/speakers/*.md");
+  });
+
   /* Markdown Plugins */
   let options = {
     html: true,

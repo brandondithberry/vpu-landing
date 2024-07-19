@@ -23,7 +23,7 @@
           </nav>
         </div>
         <div class="cta">
-          <a href="/getaccess/index.html"><button>Sign Up</button></a>
+          <a href="/getaccess/index.html"><button>Request Access</button></a>
         </div>
         <div class="menu-toggle">
           <span id="menuToggle">+</span>
@@ -39,24 +39,23 @@
         <a href="/partners/index.html">Partners</a>
       </div>
       <div class="cta">
-        <a href="/getaccess/index.html"><button>Sign Up</button></a>
+        <a href="/getaccess/index.html"><button>Request Access</button></a>
       </div>
     </div>
 
     <main>
-      <h1>{{ title }}</h1>
+      <h1>Speakers</h1>
       <ul>
-        {% set speakers = collections.speakers %}
-        {% for speaker in speakers %}
+        {% for speaker in collections.speakers | dump %}
         <li>
-          <strong>{{ speaker.title | markdown | safe }}</strong>
-          <br />
-          {% if speaker.location %} Location:
-          {{ speaker.location | markdown | safe }}
-          <br />
-          {% endif %} {% if speaker.info %}
-          {{ speaker.info | markdown | safe }}
-          {% endif %}
+          <img src="{{ speaker.data.headshot }}" alt="{{ speaker.data.title }}" />
+          <strong>{{ speaker.data.title }}</strong><br />
+          Company: {{ speaker.data.company }}<br />
+          Role: {{ speaker.data.role }}<br />
+          Viewpoint: {{ speaker.data.mainviewpoint }}<br />
+          Dates: {{ speaker.data.dates }}<br />
+          Type: {{ speaker.data.type | join(", ") }}<br />
+          {{ speaker.data.bio | safe }}
         </li>
         {% endfor %}
       </ul>

@@ -1,5 +1,5 @@
 ---
-layout: /layouts/speakers.njk
+layout: layouts/speakers.njk
 title: Speakers
 permalink: /speakers/index.html
 eleventyNavigation:
