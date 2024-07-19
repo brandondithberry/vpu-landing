@@ -1,25 +1,18 @@
 <section>
 	{% for speaker in speakerlist | reverse %}
-		<article{% if speaker.url == url %} data-current="current item"{% endif %}>
+		<div{% if speaker.url == url %} data-current="current item"{% endif %}>
 			<h3>
-				<a href="{{ speaker.url | url }}">
-					{% if speaker.data.title %}
-						{{ speaker.data.title }}
-					{% else %}
-						Untitled
-					{% endif %}
-				</a>
+				{% if speaker.data.title %}
+					{{ speaker.data.title }}
+				{% else %}
+					Untitled
+				{% endif %}
 			</h3>
 			{% if speaker.data.summary %}
 				<p>
 					{{ speaker.data.summary }}
 				</p>
 			{% endif %}
-			<p>
-				<time datetime="{{ speaker.date | machineDate }}">
-					<small>{{ speaker.date | readableDate }} by <a href="/authors/{{ speaker.data.author | slug }}/">{{ speaker.data.author }}</a></small>
-				</time>
-			</p>
-		</article>
+			</div>
 	{% endfor %}
 </section>
