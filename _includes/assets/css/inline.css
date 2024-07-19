@@ -105,7 +105,7 @@ h3:not(:first-child) {
 
 .text {
   width: 100%;
-  max-width: 570px;
+  max-width: 540px;
   margin: 0 auto;
   text-align: center;
 }
@@ -389,8 +389,8 @@ section.alt {
 
 .hero {
   border-bottom: 1px solid white;
-  height: 10rem;
   overflow: hidden;
+  padding: 25% 1.5rem;
 }
 
 .hero video {
@@ -594,10 +594,6 @@ ____________________________________*/
     flex-direction: row;
     padding: 0.8rem 1.5rem;
   }
-
-  .hero {
-    height: 50vw;
-  }
 }
 
 /* DESKTOP STYLING
@@ -623,11 +619,6 @@ ____________________________________*/
 
   header .menu-toggle {
     display: none;
-  }
-
-  .hero {
-    padding: 15rem 1rem;
-    text-align: center;
   }
 
   .days .container a {
