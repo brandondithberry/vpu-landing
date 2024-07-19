@@ -1,0 +1,25 @@
+<section>
+	{% for partner in partnerlist | reverse %}
+		<article{% if partner.url == url %} data-current="current item"{% endif %}>
+			<h3>
+				<a href="{{ partner.url | url }}">
+					{% if partner.data.title %}
+						{{ partner.data.title }}
+					{% else %}
+						Untitled
+					{% endif %}
+				</a>
+			</h3>
+			{% if partner.data.summary %}
+				<p>
+					{{ partner.data.summary }}
+				</p>
+			{% endif %}
+			<p>
+				<time datetime="{{ partner.date | machineDate }}">
+					<small>{{ partner.date | readableDate }} by <a href="/authors/{{ partner.data.author | slug }}/">{{ partner.data.author }}</a></small>
+				</time>
+			</p>
+		</article>
+	{% endfor %}
+</section>

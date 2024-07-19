@@ -1,28 +1,32 @@
-<!DOCTYPE html>
-<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
-  {% include "components/head.njk" %}
+---
+layout: layouts/base.njk
+section: partner
+---
 
-  <body>
-    {% include "components/header.njk" %}
+<article>
+  <h1>{{ title }}</h1>
+  <p>
+    <small>
+      <time datetime="{{ page.date | machineDate }}">{{
+        page.date | readableDate
+      }}</time>
+      by <a href="/authors/{{ author | slug }}/">{{ author }}</a>
+    </small>
+  </p>
 
-    <main>
-      <h1>{{ title }}</h1>
-      <ul>
-        {% for partner in collections.partners %}
-        <li>
-          <strong>{{ partner.title | markdown | safe }}</strong>
-          <br />
-          {% if partner.location %} Location:
-          {{ partner.data.location | markdown | safe }}
-          <br />
-          {% endif %} {% if partner.info %}
-          {{ partner.info | markdown | safe }}
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-    </main>
+  {{ layoutContent | safe }}
 
-    {% include "components/footer.njk" %}
-  </body>
-</html>
+  {% if tags %}
+  <p>
+    {% for tag in tags %} {%- if tag != "partner" -%} {% set tagUrl %}/tags/{{
+      tag
+    }}/{% endset %}
+    <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+    {%- endif -%} {% endfor %}
+  </p>
+  {% endif %}
+</article>
+
+<nav>
+  <a href="{{ '/partner/' | url }}">← Blog index</a>
+</nav>

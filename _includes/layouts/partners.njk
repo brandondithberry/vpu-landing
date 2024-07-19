@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
-  {% include "components/head.njk" %}
+---
+layout: layouts/base.njk
+section: partners
+permalink: /partners/index.html
+---
+<h1>{{ title }}</h1>
 
-  <body>
-    {% include "components/header.njk" %}
+{{ layoutContent | safe }}
 
-    <main>
-      <h1>{{ title }}</h1>
-      <ul>
-        {% for partner in collections.partners %}
-        <li>
-          <strong>{{ partner.title | markdown | safe }}</strong>
-          <br />
-          {% if partner.location %} Location:
-          {{ partner.data.location | markdown | safe }}
-          <br />
-          {% endif %} {% if partner.info %}
-          {{ partner.info | markdown | safe }}
-          {% endif %}
-        </li>
-        {% endfor %}
-      </ul>
-    </main>
-
-    {% include "components/footer.njk" %}
-  </body>
-</html>
+{% set partnerlist = collections.partners %}
+{% include "components/partnerlist.njk" %}
