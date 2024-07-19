@@ -48,13 +48,13 @@
       <ul>
         {% for speaker in collections.speakers %}
         <li>
-          <strong>{{ speaker.data.title | markdown | safe }}</strong>
+          <strong>{{ speaker.title | markdown | safe }}</strong>
           <br />
-          {% if speaker.data.location %} Location:
-          {{ speaker.data.location | markdown | safe }}
+          {% if speaker.location %} Location:
+          {{ speaker.location | markdown | safe }}
           <br />
-          {% endif %} {% if speaker.data.info %}
-          {{ speaker.data.info | markdown | safe }}
+          {% endif %} {% if speaker.info %}
+          {{ speaker.info | markdown | safe }}
           {% endif %}
         </li>
         {% endfor %}

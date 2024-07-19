@@ -42,7 +42,7 @@ collections:
           - {label: Layout, name: layout, widget: hidden, default: /layouts/day.njk}
   - label: "Partners"
     name: "partners"
-    folder: "content/partners"
+    folder: "partners"
     create: true
     fields:
     - {label: Partner, name: title, widget: string}
@@ -51,7 +51,7 @@ collections:
     - {label: Logo, name: logo, widget: image}
   - label: "Speakers"
     name: "speakers"
-    folder: "content/speakers"
+    folder: "speakers"
     create: true
     fields:
     - {label: Speaker, name: title, widget: string}
