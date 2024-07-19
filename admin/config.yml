@@ -17,6 +17,7 @@ collections:
       - label: "July 31st"
         name: "july31st"
         file: "pages/july31st.md"
+        slug: "{{slug}}"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Events
@@ -30,6 +31,7 @@ collections:
       - label: "August 1st"
         name: "august1st"
         file: "pages/august1st.md"
+        slug: "{{slug}}"
         fields:
           - {label: Title, name: title, widget: string}
           - label: Events
@@ -44,6 +46,7 @@ collections:
     name: "partners"
     folder: "partners"
     create: true
+    slug: "{{slug}}"
     fields:
     - {label: Partner, name: title, widget: string}
     - {label: Website, name: website, widget: string}
@@ -53,6 +56,7 @@ collections:
     name: "speakers"
     folder: "speakers"
     create: true
+    slug: "{{slug}}"
     fields:
     - {label: Speaker, name: title, widget: string}
     - {label: Company, name: company, widget: string}
