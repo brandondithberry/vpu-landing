@@ -1,9 +1,13 @@
 import Post from "/admin/preview-templates/post.js";
 import Page from "/admin/preview-templates/page.js";
+import Speaker from "/admin/preview-templates/speaker.js";
+import Partner from "/admin/preview-templates/partner.js";
 
 // Register the Post component as the preview for entries in the blog collection
 CMS.registerPreviewTemplate("blog", Post);
 CMS.registerPreviewTemplate("pages", Page);
+CMS.registerPreviewTemplate("speakers", Speaker);
+CMS.registerPreviewTemplate("partners", Partner);
 
 CMS.registerPreviewStyle("/_includes/assets/css/inline.css");
 // Register any CSS file on the home page as a preview style

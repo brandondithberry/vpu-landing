@@ -1,66 +1,11 @@
-<!DOCTYPE html>
-<html {% if section %} data-current="{{ section }}" {% endif %} lang="en">
-  {% include "components/head.njk" %}
+---
+layout: layouts/base.njk
+section: blog
+permalink: /blog/index.html
+---
+<h1>{{ title }}</h1>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="{{ '/' | url }}">
-            <img src="/static/img/logo-black.png" alt="logo" />
-          </a>
-        </div>
-        <div class="menu">
-          <nav>
-            <ul>
-              <li><a href="/pages/july31st/index.html">July 31st</a></li>
-              <li>
-                <a href="/pages/august1st/index.html">August 1st</a>
-              </li>
-              <li><a href="/speakers/index.html">Speakers</a></li>
-              <li><a href="/partners/index.html">Partners</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="cta">
-          <a href="/getaccess/index.html"><button>Request Access</button></a>
-        </div>
-        <div class="menu-toggle">
-          <span id="menuToggle">+</span>
-        </div>
-      </div>
-    </header>
+{{ layoutContent | safe }}
 
-    <div class="mobile-menu" id="mobileMenu">
-      <div class="menu">
-        <a href="/pages/july31st/index.html">July 31st</a>
-        <a href="/pages/august1st/index.html">August 1st</a>
-        <a href="/speakers/index.html">Speakers</a>
-        <a href="/partners/index.html">Partners</a>
-      </div>
-      <div class="cta">
-        <a href="/getaccess/index.html"><button>Request Access</button></a>
-      </div>
-    </div>
-
-    <main>
-      <h1>Speakers</h1>
-      <ul>
-        {% for speaker in collections.speakers | dump %}
-        <li>
-          <img src="{{ speaker.data.headshot }}" alt="{{ speaker.data.title }}" />
-          <strong>{{ speaker.data.title }}</strong><br />
-          Company: {{ speaker.data.company }}<br />
-          Role: {{ speaker.data.role }}<br />
-          Viewpoint: {{ speaker.data.mainviewpoint }}<br />
-          Dates: {{ speaker.data.dates }}<br />
-          Type: {{ speaker.data.type | join(", ") }}<br />
-          {{ speaker.data.bio | safe }}
-        </li>
-        {% endfor %}
-      </ul>
-    </main>
-
-    {% include "components/footer.njk" %}
-  </body>
-</html>
+{% set postslist = collections[speakers] %}
+{% include "components/speakerlist.njk" %}
