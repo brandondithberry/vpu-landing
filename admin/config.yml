@@ -18,54 +18,76 @@ collections:
         name: "july31st"
         file: "pages/july31st.md"
         fields:
-          - {label: Title, name: title, widget: string}
+          - { label: Title, name: title, widget: string }
           - label: Events
             name: events
             widget: list
             fields:
-              - {label: Title, name: title, widget: markdown, minimal: true}
-              - {label: Location, name: location, widget: string, required: false}
-              - {label: Info, name: info, widget: markdown, required: false}
-          - {label: Layout, name: layout, widget: hidden, default: /layouts/day.njk}
+              - { label: Title, name: title, widget: markdown, minimal: true }
+              - {
+                  label: Location,
+                  name: location,
+                  widget: string,
+                  required: false,
+                }
+              - { label: Info, name: info, widget: markdown, required: false }
+          - {
+              label: Layout,
+              name: layout,
+              widget: hidden,
+              default: /layouts/day.njk,
+            }
       - label: "August 1st"
         name: "august1st"
         file: "pages/august1st.md"
         fields:
-          - {label: Title, name: title, widget: string}
+          - { label: Title, name: title, widget: string }
           - label: Events
             name: events
             widget: list
             fields:
-              - {label: Title, name: title, widget: markdown, minimal: true}
-              - {label: Location, name: location, widget: string, required: false}
-              - {label: Info, name: info, widget: markdown, required: false}
-          - {label: Layout, name: layout, widget: hidden, default: /layouts/day.njk}
+              - { label: Title, name: title, widget: markdown, minimal: true }
+              - {
+                  label: Location,
+                  name: location,
+                  widget: string,
+                  required: false,
+                }
+              - { label: Info, name: info, widget: markdown, required: false }
+          - {
+              label: Layout,
+              name: layout,
+              widget: hidden,
+              default: /layouts/day.njk,
+            }
   - name: "partners"
     label: "Partners"
     folder: "partners"
     create: true
     slug: "{{slug}}"
+    identifier_field: partner
     fields:
-    - {label: Partner, name: title, widget: string}
-    - {label: Website, name: website, widget: string}
-    - {label: Blurb, name: blurb, widget: markdown}
-    - {label: Logo, name: logo, widget: image}
+      - { label: Partner, name: partner, widget: string }
+      - { label: Website, name: website, widget: string }
+      - { label: Blurb, name: blurb, widget: markdown }
+      - { label: Logo, name: logo, widget: image }
   - name: "speakers"
     label: "Speakers"
     folder: "speakers"
     create: true
     slug: "{{slug}}"
+    identifier_field: speaker
     fields:
-    - {label: Speaker, name: title, widget: string}
-    - {label: Company, name: company, widget: string}
-    - {label: Role, name: role, widget: string}
-    - {label: Main Viewpoint, name: mainviewpoint, widget: string}
-    - {label: Dates, name: dates, widget: string, required: false}
-    - label: "Type"
-      name: "type"
-      widget: "select"
-      multiple: true
-      required: false
-      options: ["Moderator", "Panelist"]
-    - {label: Bio, name: bio, widget: markdown, required: false}
-    - {label: Headshot, name: headshot, widget: image, required: false}
+      - { label: Speaker, name: speaker, widget: string }
+      - { label: Company, name: company, widget: string }
+      - { label: Role, name: role, widget: string }
+      - { label: Main Viewpoint, name: mainviewpoint, widget: string }
+      - { label: Dates, name: dates, widget: string, required: false }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        multiple: true
+        required: false
+        options: ["Moderator", "Panelist"]
+      - { label: Bio, name: bio, widget: markdown, required: false }
+      - { label: Headshot, name: headshot, widget: image, required: false }
