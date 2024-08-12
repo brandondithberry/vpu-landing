@@ -33,6 +33,6 @@
   },
   "dependencies": {
     "markdown-it": "^14.1.0",
-    "markdown-it-attrs": "^4.1.6"
+    "markdown-it-attrs": "^4.2.0"
   }
 }
